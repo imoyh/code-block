@@ -1,0 +1,10 @@
+@for $i from 1 through 3
+{
+  .row-#{$i * 5} {
+    margin: (-5px * $i);
+  }
+  
+  .row-#{$i * 5} [class*=col-] {
+    margin: (5px * $i);
+  }
+}
