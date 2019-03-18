@@ -1,10 +1,10 @@
-@for $i from 1 through 3
-{
-  .row-#{$i * 5} {
-    margin: (-5px * $i);
-  }
-  
-  .row-#{$i * 5} [class*=col-] {
-    margin: (5px * $i);
+@for $i from 1 through 15 {
+  .row.gutter-#{$i * 2} {
+    margin-left: (-1px * $i);
+    margin-right: (-1px * $i);
+    [class*=col-] {
+      padding-left: 1px * $i;
+      padding-right: 1px * $i;
+    }
   }
 }
